@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bapu AR Education</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+      
+      <a-marker type="pattern" url="pattern-marker.patt">
+        
+        <a-text value="Matrubhasha ma Shikshan" color="#D32F2F" position="-1 0.5 0" rotation="-90 0 0" width="6" align="center"></a-text>
+        
+        <a-box position='0 0.5 0' material='opacity: 0.6; color: #4CAF50;' scale="1.5 1.5 1.5"></a-box>
+        
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
